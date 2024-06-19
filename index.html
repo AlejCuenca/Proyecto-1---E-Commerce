@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Straptech-Inicio</title>
+    <!-- CSS Bootstrap-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS propio-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="banner"></div>
+    <header>
+    
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img class="nav-logo" src="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/1b2d6b1019c17cecf8a00e29fc75af6b.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 arreglar-nav">
+              <li class="nav-item">
+                <a class="nav-link active transicion-nav" aria-current="page" href="/About-Contacto-error/CONTACTO.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle transicion-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class='bx bxs-user bx-sm' style='color:#ffffff'  ></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Iniciar Sesión</a></li>
+                  <li><a class="dropdown-item" href="Registro/registro.html">Registrarse</a></li>
+                </ul>
+              </li>            
+
+
+
+            <li class="nav-item">
+              <a class="nav-link transicion-nav" href="/carrito/carrito.html">
+                <i class='bx bx-sm bx-cart-add' style='color:#ffffff' ></i>
+              </a>
+            </li>
+          </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </header>
+<!-- Modal nav -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-theme="dark">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 modal-nav" id="staticBackdropLabel">Inicio de Sesión</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-nav login-nav">
+          <input type="text" name="usuario" value="" placeholder="Usuario">
+          <hr>
+          <input type="password" name="contraseña" value="" placeholder="Contraseña">
+        </div>
+        <div class=" registro-nav">
+         <p>No tienes una cuenta? </p>
+         <a class="registro-boton-nav" href="/Registro/registro.html">Crear nueva</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section id="intro">
+        <h2>StrapTech</h2>
+        <!--Carousel-->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="images/imagenSec1.jpg" class="d-block w-100" alt="dispositivos tecnologicos">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color:aliceblue">Las tecnologías que necesitas</h5>
+                <p style="color:aliceblue">En esta página podrás encontrar una amplia variedad de productos para el uso cotidiando en tu vida</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/serviciotecnico.jpg" class="d-block w-100" alt="servicio tecnico">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color:aliceblue">Asistencia Técnica</h5>
+                <p style="color:aliceblue">¿Tienes algún problema con tus dispositivos?. Nuestra página te brinda la mejor de las asistencias para solucionarlo.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/consejostec.jpg" class="d-block w-100" alt="consejos tecnologicos">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color:aliceblue">Algunos tips</h5>
+                <p style="color:aliceblue">Podras informarte con algunos tips para aprovechar al máximo tus dispositivos</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      <!--Fin de Carousel-->
+        
+     </section>   
+    <section id="contenido1">
+      <div>
+        <div class="caja1_sec1">
+          <!--Primer Carousel-->
+          <h2>Ofertas del Día</h2>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4">
+                <div class="card" style="width: 100%; height: 100%;">
+                  <img src="images/monitor1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Monitor gamer Philips V 221V8 LCD 21.5" negro 100V/240V</h5>
+                    <p class="card-text">$73.100
+                    </p>
+
+                    <a href="/Detalle/Monitor philips.html" class="btn btn-primary">Ver Artículo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="card" style="width: 100%; height: 100%;">
+                  <img src="images/mouse.jpg " class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Mouse inalámbrico Microsoft Mobile Souris Wireless Mobile 1850 negro</h5>
+                    <p class="card-text">$7.841</p>
+                    <a href="/Detalle/Mouse Inalámbrico.html" class="btn btn-primary">Ver Artículo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="card" style="width: 100%; height: 100%;">
+                  <img src="images/SSD.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Disco sólido interno Kingston SA400S37/480G 480GB negro
+                    </h5>
+                    <p class="card-text">$32.400</p>
+                    <a href="/Detalle/Disco Sólido.html" class="btn btn-primary">Ver Artículo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de primer carousel-->
+        <!-- Comienzo segundo carousel-->
+        <div class="caja2_sec1">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/teclado1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Combo Mouse Y Teclado Usb Inalambrico Silencioso Español</h5>
+                      <p class="card-text">$19.890</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/webcam.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Webcam Camara Web Para Pc Full Hd 1080p Con Microfono Noga E</h5>
+                      <p class="card-text">$7.934</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/joystick.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Joystick Inalámbrico Gamepad Pc Ps3 Switch Android Netmak Ep Color Blanco</h5>
+                      <p class="card-text">$22.999</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Fin de segundo carousel-->
+        <!-- Comienzo de tercer carousel-->
+        <div class="caja3_sec1">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/auricularesbluet.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Auriculares In Ear Inalambrico Ruffo E7s Negro Bluetooth 5.3</h5>
+                      <p class="card-text">$8.101</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/oculus.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lentes De Realidad Virtual Oculus Quest 2 Advanced 256gb</h5>
+                      <p class="card-text">$719.990</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/Notebookgamer.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Laptop Asus Rog Flow 13.4 I9-12900h 16 Ram 1tb Ssd Rtx 3050</h5>
+                      <p class="card-text">$1.600.000</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin de tercer carousel-->
+      </section>
+    <section id="contenido2">
+      <div>
+      <div id="caja1_sec2">
+      <h2>Articulos para tu PC</h2>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card" style="width: 100%;">
+              <img src="images/monitor2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Monitores</h5>
+                <p class="card-text">Las mejores pantallas para poder apreciar cada pixel que te puede transmitir tu pc.</p>
+                <a href="/Categorías/Pc/index.html" class="btn btn-primary">Ver categoría</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 100%;">
+              <img src="images/joystick.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gamming</h5>
+                <p class="card-text">Los mejores accesorios para tener la mejor jugabilidad en tu tiempo libre.</p>
+                <a href="/Categorías/Pc/index.html" class="btn btn-primary">Ver categoría</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 100%;">
+              <img src="images/SSD.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hardware</h5>
+                <p class="card-text">Todos los componentes para mejorar el rendimiento de tu pc.</p>
+                <a href="/Categorías/Pc/index.html" class="btn btn-primary">Ver categoría</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+       <div id="caja2_sec2">
+          <h2>Articulos para tu celular</h2>
+          <div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card" style="width: 100%;">
+                  <img src="images/Amplificadorpantalla.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Ultilidades</h5>
+                    <p class="card-text">Las mejores pantallas para poder aumentar el tamaño de tu celular.</p>
+                    <a href="/Categorías/Celular/index.html" class="btn btn-primary">Ver categoría</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 100%;">
+                  <img src="images/funda airpods.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Para tu airpods</h5>
+                    <p class="card-text">Para el cuidado de tu musica</p>
+                    <a href="/Categorías/Celular/index.html" class="btn btn-primary">Ver categoría</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 100%;">
+                  <img src="images/gatillo.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Gamming</h5>
+                    <p class="card-text">Para la mejor experiencia en tu juego</p>
+                    <a href="/Categorías/Celular/index.html" class="btn btn-primary">Ver categoría</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+       </div>
+    </section>
+      
+    <section id="contenido3">
+            <div class="row" id="modulo2">
+                  <div class="col-sm-12 col-lg-4" id="colum4">
+                    <!--Inicio Card-->
+                    <div class="card" style="width: 100%;">
+                        <img src="images/tecnicos.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Asistencia tecnica</h5>
+                          <p class="card-text">¿Tienes algun inconveniente con tus productos? Comunicate con nosotros para solucionarlo</p>
+                        </div>
+                        <div class="card-body">
+                          <a href="#" class="card-link">https://www.instagram.com/</a>
+                        </div>
+                      </div>
+                      <!--Fin Card-->
+                  </div>
+                  <div class="col-sm-12 col-lg-4" id="colum5">
+                    <!-- Incicio Collapse -->
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                          ¿Te gustó nuestro contenido?
+                        </button>
+                      </p>
+                      <div style="min-height: 40px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                          <div class="card card-body" style="width: 300px;">
+                            Abajo encontraras nuestras redes sociales, en donde podrás ver nuestras actualizaciones y podras compartir con otros usuarios. Síguenos y ayudanos a compartir para que este arte pueda llegar a mas personas. :]
+                          </div>
+                        </div>
+                      </div>
+                    <!-- Fin Collapse -->
+                  </div>
+                  <div class="col-sm-12 col-lg-4" id="colum6">
+                    <h3>Contáctenos</h3>
+                    <form action="#">
+                        <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required maxlength="20" class="form-control">
+                        <input type="text" name="Apellido" id="apellido" placeholder="Apellido" required maxlength="40" class="form-control">
+                        <input type="email" name="Correo" id="correo" placeholder="Correo Electrónico" required maxlength="100" class="form-control">
+                        <input type="number" name="Edad" id="edad" placeholder="Edad" min="10" max="100" class="form-control">
+                        <select name="servicio" id="enfermedad" class="form-control">
+                            <option value="...."></option>
+                            <option value="..."></option>
+                            <option value="..."></option></select>
+                        <textarea name="mensaje" id="mensaje" rows="4trf" placeholder="Mensaje" class="form-control"></textarea>
+                        <input type="submit" value="Enviar consulta" class="btn btn-outline-success">
+                    </form>
+                    <div id="derechos">
+                        <!-- Inicio Modal -->
+                        <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Términos
+                </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Términos</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Queda informado el Usuario y acepta que el acceso y navegación de este Sitio Web no constituye ni supone, en modo alguno, el inicio de una relación de tipo comercial con el portal.
+                            Está prohibido el uso de este Sitio Web con fines lesivos, ilícitos o que, de cualquier manera, pudieran causar un daño o perjuicio o impedir el normal funcionamiento del Sitio Web.
+                            El Usuario se compromete a usar este Sitio Web, todas sus páginas y artículos integrantes, así como sus servicios, de una manera lícita y sin contravenir la legislación vigente, el orden público y la buena fe.            
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                        <!-- Fin Modal -->    
+                  </div>
+            </div>
+    </section>
+    <footer id="footer">
+        <!-- Inicio Nav-bar -->
+        <footer class="footer">
+          <section class="seccion-1">
+            <div class="caja-nav">
+              <figure>
+                  <img class="logo-f" src="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/1b2d6b1019c17cecf8a00e29fc75af6b.png"  alt="Logo empresa">
+              </figure>
+    
+            </div>
+            <div class="caja-nav">
+             <h3>SOBRE NOSOTROS</h3>
+             <p>Somos una empresa de accesorios tecnológicos destinada a facilitar la compra de los mismos a través de la confianza y nuestra página simple e intuitiva. Todos nuestros productos son oficiales, vienen empaquetados y sellados. </p>
+            </div>
+            
+              
+              <div class="caja-nav redes-sociales">
+                <h3>SÍGUENOS</h3>
+                <a class="insta redes-sociales" href="/About-Contacto-error/ERROR.html">
+                  <i class='bx bx-sm bxl-instagram' style='color:#ffffff'  ></i>
+                </a>
+                <a class="face"  href="/About-Contacto-error/ERROR.html">
+                  <i class='bx bx-sm bxl-facebook' style='color:#ffffff' ></i>
+                </a>
+                <a class="tiktok" href="/About-Contacto-error/ERROR.html">
+                  <i class='bx bx-sm bxl-tiktok' style='color:#ffffff' ></i>
+                </a>
+                <a class="twitter" href="/About-Contacto-error/ERROR.html">
+                  <img class="tamaño-x bx" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X">
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="seccion-2">
+            <small>&copy; 2023 <b>Grupo 1</b> - Todos los Derechos Reservados.</small>
+    
+          </section>    
+        <aside id="subir"><a href="#banner">/\</a></aside>
+    </footer>
+<!--JS de Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+html{
+    font-size: 62,5%;
+}
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    position: relative;
+    background: linear-gradient(90deg, rgb(112, 201, 248) 0%, rgba(5,5,80,1) 57%, rgba(192,207,253,1) 100%);
+    font-size: 1rem;
+}
+
+.g-detalle{
+    text-align: center;
+    color: white;
+    padding: 2%;
+}
+
+.g-articulos{
+    flex-direction: column;
+    display: flex;
+    background-color: #000022;
+}
+.g-lista{
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+}
+.g-producto{
+    background-color: #000022;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+.g-producto p {
+    color: rgb(250, 250, 250);
+    font-size: 1rem;
+}
+.g-precio{
+    display: flex;
+    flex-direction: column;
+}
+.g-monto-pa{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(12, 82, 172);
+    padding: 1.5rem;
+}
+.g-monto{
+    display: flex;
+    flex-direction: column;
+}
+.g-monto-a{
+    justify-content: end;
+    -ms-flex-align: end;
+    color: white;
+}
+
+.g-confirmar-a{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.g-boton-conf{
+    background-color: #000022;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 3rem 1rem 3rem;
+    margin: 0rem;
+    border: none;
+    flex: 1 1 auto;
+    transition: all 1s ease;
+
+}
+.g-boton-conf:hover{
+    background-color: #c0cffd;
+    
+}
+.g-boton-cancel{
+    background-color: #44709c;
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+    margin: 0rem;
+    border: none;
+    flex:auto;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+.g-boton-cancel:hover{
+    background-color: red;
+    color: black;
+
+}
+
+.j-cantidad{
+    width: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width:767px) {
+    .g-producto{
+        background-color: #000022;
+        display:grid;
+        grid-template-columns: 1, 1fr;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+}
+
+

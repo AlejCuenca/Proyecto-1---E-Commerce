@@ -1,0 +1,171 @@
+html{
+    font-size: 62,5%;
+}
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(images/fondo\ cyberpunk.jpg);
+}
+
+.g-descripcion{
+    display: flex;
+    flex-direction: column;
+}
+
+.g-descripcion p,h2,h3,h1 {
+    text-align: center;
+}
+.g-comprar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.g-añade{
+    background-color:  #60b0db;
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+    margin: 0rem;
+    border: none;
+    flex: 1 1 auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.g-añade:hover{
+    background-color: #3e3e47;
+}
+
+.g-ver{
+    background-color: #3e3e47;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 3rem 1rem 3rem;
+    margin: 0rem;
+    border: none;
+    flex: 2 1 auto;
+    transition: all 1s ease;
+}
+
+.g-ver:hover{
+    background-color: rgb(75, 97, 171);
+}
+
+.g-relac{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.g-coment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.j-letra-carrousel{
+    background-color: rgba(0, 0, 0, 0.43);
+    display: inline;
+    padding: 50px;
+   
+    
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    background-color: #3e3e47;
+    text-align: center;
+}
+
+
+
+.j-seccion-1{
+    width: 100%;
+    max-width: 1300px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding:25px 25px;
+    text-align: center;
+    background: -webkit-linear-gradient(top,rgba(32, 67, 116, 0.503),rgba(12, 51, 209, 0.492));
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+.j-cajita-contenedora{
+  background-color: #ffffff;
+  padding: 100px;  
+}
+
+.j-nombreproduc{
+    display: flex;
+    text-align: start;
+    justify-content: flex-start;
+    
+}
+
+.j-precio-detalle{
+    text-align:start;
+    border: 2px;
+    border-color:black;
+}
+
+.j-stock{
+    color: grey;
+    
+}
+.j-cuadro-stock{
+    margin: 5px;
+    text-align: center;
+}
+
+.j-cajita-descrip{
+    background-color: white;
+    width: 70%;
+    padding: 30px;
+    margin: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.j-descproduc{
+    text-align: center;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+
+@media screen and (max-width:1200px){
+    .j-seccion-1{
+        width:70%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 15px 0px;
+}
+
+.j-slider{
+    width:80%;
+}  
+
+.j-slide-achicar{
+    width: 70%;
+    justify-content: center;
+}
+.j-responsive{
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    margin-top:5px
+}
+
+.j-cajita-contenedora{
+  padding: 50px; 
+  justify-content: center;
+}
+
+}

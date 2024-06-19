@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="nav-footer.css">
+
+
+</head>
+<body>
+
+    <header>
+    
+     
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+              <img class="nav-logo" src="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/1b2d6b1019c17cecf8a00e29fc75af6b.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 arreglar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active transicion-nav" aria-current="page" href="/About-Contacto-error/CONTACTO.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle transicion-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class='bx bxs-user bx-sm' style='color:#ffffff'  ></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Iniciar Sesión</a></li>
+                    <li><a class="dropdown-item" href="./registro.html">Registrarse</a></li>
+                  </ul>
+                </li>            
+
+
+
+              <li class="nav-item">
+                <a class="nav-link transicion-nav" href="/carrito/carrito.html">
+                  <i class='bx bx-sm bx-cart-add' style='color:#ffffff' ></i>
+                </a>
+              </li>
+            </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+<!-- Modal nav -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-theme="dark">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 modal-nav" id="staticBackdropLabel">Inicio de Sesión</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-nav login-nav">
+            <input type="text" name="usuario" value="" placeholder="Usuario">
+            <hr>
+            <input type="password" name="contraseña" value="" placeholder="Contraseña">
+          </div>
+          <div class=" registro-nav">
+           <p>No tienes una cuenta? </p>
+           <a class="registro-boton-nav" href="registro.html">Crear nueva</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- CAJA DE REGISTRO -->
+    <form class="row g-2 registro-caja">
+        <h3 class="titulo-regis">FORMULARIO DE REGISTRO</h3>
+        <div class="col-md-5">
+          <label for="validationDefault01" class="form-label">Nombre Completo</label>
+          <input type="text" class="form-control" id="validationDefault01" value="" required>
+        </div>
+        <div class="col-md-5">
+            <label for="validationDefault02 " class="form-label ">Email</label>
+            <input type="email" class="form-control" id="validationDefault02" value="" required>
+          </div>
+        
+        <div class="col-md-5">
+          <label for="validationDefaultUsername " class="form-label ">Nombre de Usuario</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+            <label for="validationDefault01" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="validationDefault01" value="" required>
+          </div>
+          <div class="col-md-5">
+            <label for="validationDefault02 " class="form-label ">Dirección</label>
+            <input type="text" class="form-control" id="validationDefault02" value="" required>
+          </div>
+          <div class="col-md-3">
+            <label for="validationDefault02 " class="form-label ">Código Postal</label>
+            <input type="text" class="form-control" id="validationDefault02" value="" required>
+          </div>
+        <div class="col-12">
+          
+                <div class=" registro-nav">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                   </div>
+                   <p>Aceptar</p>
+                    <a class="registro-boton-nav" href="/About-Contacto-error/ERROR.html"><b>términos y condiciones</b></a>
+                </div>
+            </label>
+          
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Crear Cuenta</button>
+        </div>
+      </form>
+
+      <footer class="footer">
+        <section class="seccion-1">
+          <div class="caja-nav">
+            <figure>
+                <img class="logo-f" src="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/1b2d6b1019c17cecf8a00e29fc75af6b.png"  alt="Logo empresa">
+            </figure>
+  
+          </div>
+          <div class="caja-nav">
+           <h3>SOBRE NOSOTROS</h3>
+           <p>Somos una empresa de accesorios tecnológicos destinada a facilitar la compra de los mismos a través de la confianza y nuestra página simple e intuitiva. Todos nuestros productos son oficiales, vienen empaquetados y sellados. </p>
+          </div>
+          
+            
+            <div class="caja-nav redes-sociales">
+              <h3>SÍGUENOS</h3>
+              <a class="insta redes-sociales" href="/About-Contacto-error/ERROR.html">
+                <i class='bx bx-sm bxl-instagram' style='color:#ffffff'  ></i>
+              </a>
+              <a class="face"  href="/About-Contacto-error/ERROR.html">
+                <i class='bx bx-sm bxl-facebook' style='color:#ffffff' ></i>
+              </a>
+              <a class="tiktok" href="/About-Contacto-error/ERROR.html">
+                <i class='bx bx-sm bxl-tiktok' style='color:#ffffff' ></i>
+              </a>
+              <a class="twitter" href="/About-Contacto-error/ERROR.html">
+                <img class="tamaño-x bx" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X">
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="seccion-2">
+          <small>&copy; 2023 <b>Grupo 1</b> - Todos los Derechos Reservados.</small>
+  
+        </section>
+       
+        
+      </footer>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

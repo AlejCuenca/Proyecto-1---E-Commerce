@@ -1,0 +1,342 @@
+3<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría PC</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Venta de Accesorios</title>
+    <!-- CSS Bootstrap-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+    <!-- CSS propio-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="banner"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+              <img class="nav-logo" src="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/1b2d6b1019c17cecf8a00e29fc75af6b.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 arreglar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active transicion-nav" aria-current="page" href="/About-Contacto-error/CONTACTO.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle transicion-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class='bx bxs-user bx-sm' style='color:#ffffff'  ></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Iniciar Sesión</a></li>
+                    <li><a class="dropdown-item" href="/Registro/registro.html">Registrarse</a></li>
+                  </ul>
+                </li>            
+
+
+
+              <li class="nav-item">
+                <a class="nav-link transicion-nav" href="/carrito/carrito.html">
+                  <i class='bx bx-sm bx-cart-add' style='color:#ffffff' ></i>
+                </a>
+              </li>
+            </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+<!-- Modal nav -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-theme="dark">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 modal-nav" id="staticBackdropLabel">Inicio de Sesión</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-nav login-nav">
+            <input type="text" name="usuario" value="" placeholder="Usuario">
+            <hr>
+            <input type="password" name="contraseña" value="" placeholder="Contraseña">
+          </div>
+          <div class=" registro-nav">
+           <p>No tienes una cuenta? </p>
+           <a class="registro-boton-nav" href="registro.html">Crear nueva</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <section id="contenido1">
+      <div>
+        <div class="caja1_sec1">
+          <!--Primer Carousel-->
+          <h2>Artículos</h2>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <div class="card" style="width: 100%; height: 100%;">
+                  <img src="images/monitor1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Monitor gamer Philips V 221V8 LCD 21.5" negro 100V/240V</h5>
+                    <p class="card-text">$73.100
+                    </p>
+
+                    <a href="#" class="btn btn-primary">Ver Artículo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card" style="width: 100%; height: 100%;">
+                  <img src="images/mouse.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Mouse inalámbrico Microsoft Mobile Souris Wireless Mobile 1850 negro</h5>
+                    <p class="card-text">$7.841</p>
+                    <a href="#" class="btn btn-primary">Ver Artículo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card" style="width: 100%; height: 100%;">
+                  <img src="images/SSD.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Disco sólido interno Kingston SA400S37/480G 480GB negro</h5>
+                    <p class="card-text">$32.400</p>
+                    <a href="#" class="btn btn-primary">Ver Artículo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de primer carousel-->
+        <!-- Comienzo segundo carousel-->
+        <div class="caja2_sec1">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/teclado1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Combo Mouse Y Teclado Usb Inalambrico Silencioso Español</h5>
+                      <p class="card-text">$19.890</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/webcam.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Webcam Camara Web Para Pc Full Hd 1080p Con Microfono Noga E</h5>
+                      <p class="card-text">$7.934</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/joystick.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Joystick Inalámbrico Gamepad Pc Ps3 Switch Android Netmak Ep Color Blanco</h5>
+                      <p class="card-text">$22.999</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Fin de segundo carousel-->
+        <!-- Comienzo de tercer carousel-->
+        <div class="caja3_sec1">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/Placa de video.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Placa De Video Geforce Gt 740 2gb Gddr5 Hdmi Vga Fortnite</h5>
+                      <p class="card-text">$84.900</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/oculus.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lentes De Realidad Virtual Oculus Quest 2 Advanced 256gb</h5>
+                      <p class="card-text">$719.990</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card" style="width: 100%; height: 100%;">
+                    <img src="images/Notebookgamer.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Laptop Asus Rog Flow 13.4 I9-12900h 16 Ram 1tb Ssd Rtx 3050</h5>
+                      <p class="card-text">$1.600.000</p>
+                      <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin de tercer carousel-->
+      </section>
+    <section id="contenido2">
+        <h2>Tambien puede interesarte</h2>
+      <div>
+      <div id="caja1_sec2">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card" style="width: 100%;">
+              <img src="images/Notebookgamer.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Laptop Asus Rog Flow 13.4 I9-12900h 16 Ram 1tb Ssd Rtx 3050</h5>
+                <p class="card-text">$1600.000</p>
+                <a href="#" class="btn btn-primary">Ver Artículo</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 100%;">
+              <img src="images/joystick.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Joystick Inalámbrico Gamepad Pc Ps3 Switch Android Netmak Ep Color Blanco</h5>
+                <p class="card-text">$22.900</p>
+                <a href="#" class="btn btn-primary">Ver Artículo</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 100%;">
+              <img src="images/SSD.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Disco sólido interno Kingston SA400S37/480G 480GB negro</h5>
+                <p class="card-text">$32.400</p>
+                <a href="#" class="btn btn-primary">Artículo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+       <div id="caja2_sec2">
+          <div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card" style="width: 100%; height: 100%;">
+                  <img src="images/mouse.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Mouse inalámbrico Microsoft Mobile Souris Wireless Mobile 1850 negro</h5>
+                    <p class="card-text">$7.841</p>
+                    <a href="#" class="btn btn-primary">Ver Artículo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 100%; height: 100%;">
+                  <img src="images/Notebookgamer.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Laptop Asus Rog Flow 13.4 I9-12900h 16 Ram 1tb Ssd Rtx 3050</h5>
+                    <p class="card-text">$1.600.000</p>
+                    <a href="#" class="btn btn-primary">Ver Artículo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 100%; height: 100%;">
+                  <img src="images/webcam.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Hardware</h5>
+                    <p class="card-text">Webcam Camara Web Para Pc Full Hd 1080p Con Microfono Noga E</p>
+                    <a href="#" class="btn btn-primary">Ver Artículo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+       </div>
+    </section>
+
+    <footer class="footer">
+      <section class="seccion-1">
+        <div class="caja-nav">
+          <figure>
+              <img class="logo-f" src="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/1b2d6b1019c17cecf8a00e29fc75af6b.png"  alt="Logo empresa">
+          </figure>
+
+        </div>
+        <div class="caja-nav">
+         <h3>SOBRE NOSOTROS</h3>
+         <p>Somos una empresa de accesorios tecnológicos destinada a facilitar la compra de los mismos a través de la confianza y nuestra página simple e intuitiva. Todos nuestros productos son oficiales, vienen empaquetados y sellados. </p>
+        </div>
+        
+          
+          <div class="caja-nav redes-sociales">
+            <h3>SÍGUENOS</h3>
+            <a class="insta redes-sociales" href="/About-Contacto-error/ERROR.html">
+              <i class='bx bx-sm bxl-instagram' style='color:#ffffff'  ></i>
+            </a>
+            <a class="face"  href="/About-Contacto-error/ERROR.html">
+              <i class='bx bx-sm bxl-facebook' style='color:#ffffff' ></i>
+            </a>
+            <a class="tiktok" href="/About-Contacto-error/ERROR.html">
+              <i class='bx bx-sm bxl-tiktok' style='color:#ffffff' ></i>
+            </a>
+            <a class="twitter" href="/About-Contacto-error/ERROR.html">
+              <img class="tamaño-x bx" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X">
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="seccion-2">
+        <small>&copy; 2023 <b>Grupo 1</b> - Todos los Derechos Reservados.</small>
+
+      </section>
+     
+      
+    </footer>
+      
+    
+<!--JS de Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</body>
+</html>

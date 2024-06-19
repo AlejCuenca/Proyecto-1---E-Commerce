@@ -51,7 +51,7 @@
             </li>
           </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="width: 100%;">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
@@ -348,10 +348,10 @@
                       </div>
                       <!--Fin Card-->
                   </div>
-                  <div class="col-sm-12 col-lg-4" id="colum5">
+                  <div class="col-sm-12 col-lg-4 text-center" id="colum5">
                     <!-- Incicio Collapse -->
                     <p>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" >
                           ¿Te gustó nuestro contenido?
                         </button>
                       </p>
@@ -367,18 +367,14 @@
                   <div class="col-sm-12 col-lg-4" id="colum6">
                     <h3>Contáctenos</h3>
                     <form action="#">
-                        <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required maxlength="20" class="form-control">
-                        <input type="text" name="Apellido" id="apellido" placeholder="Apellido" required maxlength="40" class="form-control">
-                        <input type="email" name="Correo" id="correo" placeholder="Correo Electrónico" required maxlength="100" class="form-control">
-                        <input type="number" name="Edad" id="edad" placeholder="Edad" min="10" max="100" class="form-control">
-                        <select name="servicio" id="enfermedad" class="form-control">
-                            <option value="...."></option>
-                            <option value="..."></option>
-                            <option value="..."></option></select>
-                        <textarea name="mensaje" id="mensaje" rows="4trf" placeholder="Mensaje" class="form-control"></textarea>
-                        <input type="submit" value="Enviar consulta" class="btn btn-outline-success">
-                    </form>
-                    <div id="derechos">
+                      <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required maxlength="20" class="form-control mb-3 p-2">
+                      <input type="text" name="Apellido" id="apellido" placeholder="Apellido" required maxlength="40" class="form-control mb-3 p-2">
+                      <input type="email" name="Correo" id="correo" placeholder="Correo Electrónico" required maxlength="100" class="form-control mb-3 p-2">
+                      <input type="number" name="Edad" id="edad" placeholder="Edad" min="10" max="100" class="form-control mb-3 p-2">
+                      <textarea name="mensaje" id="mensaje" rows="4" placeholder="Mensaje" class="form-control mb-3 p-2"></textarea>
+                      <input type="submit" value="Enviar consulta" class="btn btn-outline-success" class="form-control mb-3 p-2">
+                  </form>
+                    <div id="derechos" class="mb-3 p-2">
                         <!-- Inicio Modal -->
                         <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
